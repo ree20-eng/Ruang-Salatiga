@@ -2,7 +2,7 @@
 
 ## Tampilan Website
 
-![Halaman Home Ruang Salatiga](screenshots/home.png)
+![Halaman Home Ruang Salatiga](screenshots/img.png)
 
 # Ruang Salatiga — Discover, Taste, Remember
 
