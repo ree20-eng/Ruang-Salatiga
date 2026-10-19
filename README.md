@@ -76,15 +76,15 @@ Ruang-salatiga/
 
 **Home** — Halaman utama dengan slogan “Every taste has a story” dan deskripsi singkat.
 
-**Our Story** — Mengenalkan cerita dan identitas Ruang Salatiga.
+**About** — Mengenalkan cerita dan identitas Ruang Salatiga.
 
-**Local Flavors** — Menampilkan rekomendasi kuliner lokal Salatiga dengan detail informasi dan lokasi.
+**Kuliner** — Menampilkan rekomendasi kuliner lokal Salatiga dengan detail informasi dan lokasi.
 
 **Heritage** — Memperkenalkan tempat bersejarah dan destinasi dengan detail informasi dan lokasi.
 
 **The Journey** — Memberikan rekomendasi pengalaman menjelajahi Salatiga.
 
-**Say Hello** — Bagian yang menjadi penutup sekaligus ajakan bagi pengunjung untuk terhubung dengan website Ruang Salatiga.
+**Contact** — Bagi yang ingi melakukan kolaborasi/mempromosikan produknya di website bisa menghubungi melalui email.
 
 ## 🚀 Cara Menjalankan Website
 
