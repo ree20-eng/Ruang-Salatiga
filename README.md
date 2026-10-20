@@ -15,9 +15,9 @@ Website Ruang Salatiga merupakan platform yang memperkenalkan kuliner lokal, tem
 
 ## 📌 Deskripsi Website
 
-Website ini dibuat sebagai media informasi dan eksplorasi kuliner lokal serta tempat wisata dan bersejarah di Kota Salatiga. Melalui website ini, pengunjung dapat mengenal makanan khas, menemukan informasi lokasi kuliner lokal, mengetahui tempat bersejarah, serta menjelajahi keunikan Salatiga dalam satu platform.
+Website ini dibuat sebagai media informasi dan eksplorasi kuliner lokal, tempat wisata, hotel atau penginapan dan bersejarah di Kota Salatiga. Melalui website ini, pengunjung dapat mengenal makanan khas, menemukan informasi lokasi kuliner lokal, mengetahui tempat bersejarah, serta menjelajahi keunikan Salatiga dalam satu platform.
 
-Dengan konsep **“Discover, Taste, Remember”**, website ini menyediakan informasi mengenai kuliner lokal, lokasi UMKM, serta tempat wisata dan bersejarah di Salatiga melalui tampilan yang menarik dan mudah digunakan. Website ini diharapkan dapat membantu pengunjung menemukan berbagai potensi lokal sekaligus mendukung pengenalan UMKM kuliner tradisional kepada masyarakat luas.
+Dengan konsep **“Discover, Taste, Remember”**, website ini menyediakan informasi mengenai kuliner lokal, lokasi UMKM, Tempat penginapan, serta tempat wisata dan bersejarah di Salatiga melalui tampilan yang menarik dan mudah digunakan. Website ini diharapkan dapat membantu pengunjung menemukan berbagai potensi lokal sekaligus mendukung pengenalan UMKM kuliner tradisional kepada masyarakat luas.
 
 ## 🎯 Tujuan Website
 
@@ -81,6 +81,7 @@ Ruang-salatiga/
 **Kuliner** — Menampilkan rekomendasi kuliner lokal Salatiga dengan detail informasi dan lokasi.
 
 **Heritage** — Memperkenalkan tempat bersejarah dan destinasi dengan detail informasi dan lokasi.
+**stay** - Memberikan informasi dan rekomendasi hotel atau penginapan yang terdapat di Salatiga.
 
 **The Journey** — Memberikan rekomendasi pengalaman menjelajahi Salatiga.
 

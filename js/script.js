@@ -1,6 +1,3 @@
-/* =========================
-   MOBILE MENU
-========================= */
 
 const menuToggle =
     document.getElementById("menuToggle");
@@ -23,10 +20,6 @@ if (menuToggle) {
 }
 
 
-/* =========================
-   CLOSE MENU
-========================= */
-
 document
     .querySelectorAll(".nav a")
     .forEach(function(link) {
@@ -43,9 +36,6 @@ document
     });
 
 
-/* =========================
-   HEADER SCROLL
-========================= */
 
 const header =
     document.getElementById("siteHeader");
@@ -68,10 +58,6 @@ window.addEventListener(
     }
 );
 
-
-/* =========================
-   SCROLL REVEAL
-========================= */
 
 const revealElements =
     document.querySelectorAll(".reveal");
@@ -117,10 +103,6 @@ revealElements.forEach(
     }
 );
 
-
-/* =========================
-   ACTIVE NAVBAR
-========================= */
 
 const sections =
     document.querySelectorAll(
@@ -186,3 +168,12 @@ window.addEventListener(
 
     }
 );
+
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
+window.addEventListener("load", function () {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+    window.scrollTo(0, 0);
+});

@@ -40,7 +40,7 @@ const data = {
 
                 Enting-enting Gepuk merupakan salah
                 satu produk kuliner yang 
-                dengan identik dengan Salatiga.
+                dengan identik dengan Salatiga. Enting-enting gepuk ada di Salatiga sejak tahum 1929
 
             </p>
 
@@ -374,180 +374,177 @@ const data = {
            
 
         `
-    }
+    },
 
+
+
+       "wahid": {
+        category: "HOTEL & ACCOMMODATION",
+        type: "Hotel",
+        title: "Wahid Prime Hotel",
+        location: "Salatiga, Jawa Tengah",
+        image: "img/wahid.png",
+        address: "Salatiga, Jawa Tengah",
+         iframe: `
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.194054030826!2d110.50562529999999!3d-7.3320906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a79005d6197c5%3A0x9a8a4c1a97f2b93c!2sWahid%20Prime%20Hotel%20Salatiga!5e0!3m2!1sen!2sid!4v1792497784199!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        `,
+        maps: "https://www.google.com/maps/search/?api=1&query=Wahid+Prime+Hotel+Salatiga",
+
+        booking: "https://trv.lk/6bdce54e",
+
+        story: `
+            <p>Wahid Prime Hotel adalah hotel bintang 4 modern.
+            menjadi salah satu pilihan Hotel bagi pengunjung
+             yang ingin menikmati perjalanan di Kota Salatiga.</p>
+            <p>Hotel ini terletak di pusat kuliner Salatiga, yaitu Pasar Raya. Dimana, banyak kuliner lokal disekitar hotel tersebut</p>
+        `
+    },
+
+    "laras": {
+        category: "RESORT & SPA",
+        type: "Resort",
+        title: "Laras Asri Resort & Spa",
+        location: "Salatiga, Jawa Tengah",
+        image: "img/laras.webp",
+        address: "Salatiga, Jawa Tengah",
+         iframe: 
+         `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.114132729824!2d110.5077530747613!3d-7.3410782926675315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a79d27a7fa11d%3A0x233a2a304f948f!2sHotel%20Laras%20Asri%20Resort%20and%20Spa%20Salatiga!5e0!3m2!1sen!2sid!4v1792498028133!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>`,
+        maps: "https://www.google.com/maps/search/?api=1&query=Laras+Asri+Resort+and+Spa+Salatiga",
+
+        booking: "https://trv.lk/98f4b20d",
+
+        story: `
+            <p>Laras Asri Resort & Spa adalah hotel dan resor bintang 4 yang terletak di Kota Salatiga, Jawa Tengah.
+             Tempat ini memadukan konsep alam yang asri dengan arsitektur tradisional Jawa bernuansa klasik.
+        
+        `
+    },
+
+    "pitu": {
+        category: "HOTEL & ACCOMMODATION",
+        type: "Hotel",
+        title: "Pitu Room",
+        location: "Salatiga, Jawa Tengah",
+        image: "img/pitu.webp",
+        address: "Salatiga, Jawa Tengah",
+        iframe: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.199581506828!2d110.50026247476112!3d-7.331468592676905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a79823a5bf71d%3A0xc24bf26598b49072!2sPitu%20Rooms!5e0!3m2!1sen!2sid!4v1792497917817!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>`,
+        maps: "https://www.google.com/maps/search/?api=1&query=Grand+Wahid+Hotel+Salatiga",
+
+        booking: "https://trv.lk/0e92b42f",
+
+        story: `
+            
+            <p>Pitu Rooms  adalah sebuah hotel unik di Kota Salatiga, Jawa Tengah, yang terkenal secara internasional karena mendapat
+             predikat sebagai hotel paling ramping (tertipis) kedua di dunia.
+             <br>Hotel ini terletak pusat Kota Salatiga</p>
+        `
+    },
 };
 
 
 
 
-const params =
-    new URLSearchParams(
-        window.location.search
-    );
 
-const id =
-    params.get("id");
-
-const item =
-    data[id];
-
-
-
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+const item = data[id];
 
 if (item) {
+    document.title = item.title + " — Ruang Salatiga";
 
-
-    document.title =
-        item.title +
-        " — Rasa Salatiga";
-
-
-    document.getElementById(
-        "detailHero"
-    ).style.backgroundImage =
+    document.getElementById("detailHero").style.backgroundImage =
         `url("${item.image}")`;
 
+    document.getElementById("detailCategory").textContent = item.category;
+    document.getElementById("detailTitle").textContent = item.title;
+    document.getElementById("detailLocation").textContent = item.location;
+    document.getElementById("detailHeading").textContent = item.title;
+    document.getElementById("detailText").innerHTML = item.story;
+    document.getElementById("detailType").textContent = item.type;
+    document.getElementById("detailAddress").textContent = item.address;
 
-    document.getElementById(
-        "detailCategory"
-    ).textContent =
-        item.category;
+    // Tombol hotel atau Google Maps
+    const mapsButton = document.getElementById("mapsButton");
 
+    if (mapsButton) {
+        if (item.booking) {
+            mapsButton.href = item.booking;
+            mapsButton.textContent = "Book on Traveloka ↗";
+        } else {
+            mapsButton.href = item.maps || "#";
+            mapsButton.textContent = "Open in Google Maps ↗";
+        }
 
-    document.getElementById(
-        "detailTitle"
-    ).textContent =
-        item.title;
-
-
-    document.getElementById(
-        "detailLocation"
-    ).textContent =
-        item.location;
-
-
-    document.getElementById(
-        "detailHeading"
-    ).textContent =
-        item.title;
-
-
-    document.getElementById(
-        "detailText"
-    ).innerHTML =
-        item.story;
-
-
-    document.getElementById(
-        "detailType"
-    ).textContent =
-        item.type;
-
-
-    document.getElementById(
-        "detailAddress"
-    ).textContent =
-        item.address;
-
-
-    document.getElementById(
-        "mapsButton"
-    ).href =
-        item.maps;
-
-
-    const mapContainer =
-        document.getElementById(
-            "mapContainer"
-        );
-
-
-    if (item.iframe) {
-
-        mapContainer.innerHTML =
-            item.iframe;
-
-    } else {
-
-        mapContainer.innerHTML = `
-
-            <div class="map-placeholder">
-
-                <div>
-
-                    <strong>
-                        Lokasi kuliner
-                    </strong>
-
-                    <br>
-
-                    Gunakan tombol
-                    "Open in Google Maps"
-                    untuk melihat lokasi.
-
-                </div>
-
-            </div>
-
-        `;
-
-
-        document.getElementById(
-            "mapNote"
-        ).textContent =
-            "Untuk kuliner, tombol Google Maps membuka pencarian lokasi terbaru berdasarkan nama tempat.";
-
+        mapsButton.target = "_blank";
+        mapsButton.rel = "noopener noreferrer";
     }
 
-}
+    const mapContainer = document.getElementById("mapContainer");
 
+    if (mapContainer) {
+        if (item.iframe) {
+            mapContainer.innerHTML = item.iframe;
+        } else {
+            mapContainer.innerHTML = `
+                <div class="map-placeholder">
+                    <div>
+                        <strong>Lokasi ${item.type}</strong><br>
+                        Gunakan tombol di atas untuk melihat lokasi.
+                    </div>
+                </div>
+            `;
+        }
+    }
 
+    // Tombol kembali sesuai kategori
+    const exploreButton = document.getElementById("exploreButton");
 
-else {
+    if (exploreButton) {
+        if (item.booking) {
+            exploreButton.href = "index.html#stay";
+            exploreButton.textContent = "← Explore More Stays";
+        } else if (
+            ["kelenteng", "dekranasda", "benteng"].includes(id)
+        ) {
+            exploreButton.href = "index.html#heritage";
+            exploreButton.textContent = "← Explore More";
+        } else {
+            exploreButton.href = "index.html#kuliner";
+            exploreButton.textContent = "← Explore More";
+        }
+    }
 
+} else {
+    document.title = "Cerita Tidak Ditemukan — Ruang Salatiga";
 
-    document.title =
-        "Tidak ditemukan — Rasa Salatiga";
+    document.getElementById("detailCategory").textContent = "RASA SALATIGA";
+    document.getElementById("detailTitle").textContent = "Cerita tidak ditemukan";
+    document.getElementById("detailLocation").textContent = "";
+    document.getElementById("detailHeading").textContent = "Halaman belum tersedia";
 
-
-    document.getElementById(
-        "detailCategory"
-    ).textContent =
-        "RASA SALATIGA";
-
-
-    document.getElementById(
-        "detailTitle"
-    ).textContent =
-        "Cerita tidak ditemukan";
-
-
-    document.getElementById(
-        "detailHeading"
-    ).textContent =
-        "Halaman belum tersedia";
-
-
-    document.getElementById(
-        "detailText"
-    ).innerHTML = `
-
-        <p>
-
-            Data yang kamu cari belum
-            tersedia.
-
-        </p>
-
-        <p>
-
-            Silakan kembali ke halaman
-            utama untuk memilih cerita
-            lainnya.
-
-        </p>
-
+    document.getElementById("detailText").innerHTML = `
+        <p>Data yang kamu cari belum tersedia.</p>
+        <p>Silakan kembali ke halaman utama untuk memilih cerita lainnya.</p>
     `;
 
+    const mapsButton = document.getElementById("mapsButton");
+
+    if (mapsButton) {
+        mapsButton.href = "index.html#home";
+        mapsButton.textContent = "← Back to Home";
+        mapsButton.target = "_self";
+    }
+
+    const mapContainer = document.getElementById("mapContainer");
+
+    if (mapContainer) {
+        mapContainer.innerHTML = "";
+    }
+
+    const exploreButton = document.getElementById("exploreButton");
+
+    if (exploreButton) {
+        exploreButton.href = "index.html#home";
+        exploreButton.textContent = "← Back to Home";
+    }
 }
