@@ -81,6 +81,8 @@ Ruang-salatiga/
 **Kuliner** — Menampilkan rekomendasi kuliner lokal Salatiga dengan detail informasi dan lokasi.
 
 **Heritage** — Memperkenalkan tempat bersejarah dan destinasi dengan detail informasi dan lokasi.
+
+
 **stay** - Memberikan informasi dan rekomendasi hotel atau penginapan yang terdapat di Salatiga.
 
 **The Journey** — Memberikan rekomendasi pengalaman menjelajahi Salatiga.
